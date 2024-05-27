@@ -26,17 +26,6 @@ Before you get started, make sure you have the following prerequisites in place:
 - AWS IAM credentials configured.
 - Git for cloning the repository.
 
-## 📋 Table of Contents
-
-- [Features](#-features)
-- [Web Tier](#-web-tier)
-- [Application Tier](#-application-tier)
-- [Database Tier](#-database-tier)
-- [Terraform Configuration](#-terraform-configuration)
-- [Deployment](#-deployment)
-- [Usage](#-usage)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ## ✨ Features
 
@@ -52,13 +41,7 @@ The Web Tier is the entry point for incoming user requests. It typically include
 - **Auto Scaling**: Automatically adjusts the number of web servers based on traffic.
 - **Security Groups**: Controls incoming and outgoing traffic to the web servers.
 
-### Web Tier Configuration
 
-- [Launch Template Configuration](launch-template-web.tf)
-- [Load Balancer Configuration](alb-web.tf)
-- [Auto Scaling Configuration](asg-web.tf)
-- [Security Group Configuration of Load balancer](alb-web-sg.tf)
-- [Security Group Configuration of Auto Scaling Group](asg-web-sg.tf)
 
 ## 🚀 Application Tier
 
@@ -69,13 +52,7 @@ The Application Tier hosts the application servers responsible for running busin
 - **Auto Scaling**: Automatically adjusts the number of web servers based on traffic.
 - **Security Groups**: Controls incoming and outgoing traffic to the application servers.
 
-### Application Tier Configuration
 
-- [Launch Template Configuration](launch-template-app.tf)
-- [Load Balancer Configuration](alb-app.tf)
-- [Auto Scaling Configuration](asg-app.tf)
-- [Security Group Configuration of Load balancer](alb-app-sg.tf)
-- [Security Group Configuration of Auto Scaling Group](asg-app-sg.tf)
 
 ## 💽 Database Tier
 
@@ -84,11 +61,7 @@ The Database Tier stores and manages our application data. We use Amazon RDS for
 - **Amazon RDS**: A managed database service for MySQL/PostgreSQL/SQL Server databases.
 - **Security Groups**: Control incoming and outgoing traffic to the database.
 
-### Database Tier Configuration
 
-- [DB Subnet group Configuration](db-subnet-group.tf)
-- [Amazon RDS Configuration](rds.tf)
-- [Security Group Configuration](db-sg.tf)
 
 ## 🔧 Terraform Configuration
 
@@ -129,8 +102,3 @@ Follow these steps to deploy the architecture:
 ### Security Considerations
 - Review and customize the security groups and network ACLs to meet your specific security requirements.
 
-## 🤝 Contributing
-Contributions are Welcome! Please read my Contributing Guidelines to get started with contributing to this project.
-
-## 📄 License
-This project is licensed under the MIT License.
