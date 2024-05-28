@@ -12,23 +12,8 @@ multi-Tier- architecture on AWS
 
 ### Prerequisites
 
-Before you get started, make sure you have the following prerequisites in place:
 
-- [Terraform](https://www.terraform.io/) installed.
-- AWS IAM credentials configured.
-- Git for cloning the repository.
 
-## 📋 Table of Contents
-
-- [Features](#-features)
-- [Web Tier](#-web-tier)
-- [Application Tier](#-application-tier)
-- [Database Tier](#-database-tier)
-- [Terraform Configuration](#-terraform-configuration)
-- [Deployment](#-deployment)
-- [Usage](#-usage)
-- [Contributing](#-contributing)
-- [License](#-license)
 
 ## ✨ Features
 
